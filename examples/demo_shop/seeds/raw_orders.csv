@@ -1,0 +1,7 @@
+order_id,customer_id,amount,status
+101,1,50,completed
+102,2,20,completed
+103,3,75,returned
+104,3,10,completed
+105,4,30,completed
+106,,15,completed

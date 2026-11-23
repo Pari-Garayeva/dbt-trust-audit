@@ -1,0 +1,7 @@
+demo_shop:                 # dbt_project.yml-dəki "profile" adı ilə eyni olmalıdır
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: demo_shop.duckdb   # dbt-ni işlətdiyin qovluqda yaranacaq
+      threads: 1

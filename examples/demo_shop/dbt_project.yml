@@ -1,0 +1,14 @@
+name: demo_shop            # layihənin adı; manifest-də model ID-lərinin bir hissəsi olur: model.demo_shop.stg_orders
+version: "1.0"
+config-version: 2
+profile: demo_shop         # profiles.yml-də hansı bağlantını istifadə edəcəyini göstərir
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+
+models:
+  demo_shop:
+    staging:
+      +materialized: view  # staging ucuz olmalıdır: view-dur, data kopyalanmır
+    marts:
+      +materialized: table # marts BI tərəfindən oxunur: table-dır, sorğu sürətli olur
