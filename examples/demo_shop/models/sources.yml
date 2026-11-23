@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw              # source('raw', ...) çağırışında birinci arqument
+    schema: main           # DuckDB-də seed-lər "main" schema-ya yüklənir
+    tables:
+      - name: raw_orders     # source('raw', 'raw_orders')
+      - name: raw_customers  # source('raw', 'raw_customers')
+      - name: raw_payments   # source('raw', 'raw_payments')

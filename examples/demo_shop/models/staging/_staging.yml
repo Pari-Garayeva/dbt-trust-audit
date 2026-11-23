@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: One row per order from the raw orders feed
+    columns:
+      - name: order_id
+        description: Primary key for the order
+        tests:
+          - unique
+          - not_null
+  
+  - name: stg_payments
+    description: One row per payment from the raw payments feed
+    columns:
+      - name: payment_id
+        description: Primary key for the payment
+        tests:
+          - unique
+          - not_null
