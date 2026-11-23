@@ -1,0 +1,13 @@
+# Python virtual environment - hər kəs özününkünü yaradır
+.venv/
+__pycache__/
+
+# dbt-nin yaratdığı fayllar - mənbədən yenidən qurulur
+examples/**/target/
+examples/**/logs/
+examples/**/dbt_packages/
+examples/**/.user.yml
+
+# DuckDB database faylları - `dbt seed` + `dbt build` ilə yenidən yaranır
+*.duckdb
+*.duckdb.wal
